@@ -11,6 +11,9 @@
                     {{$todo->description}}
                 </p>
             </div>
+            <div class="card-footer">
+                <a href="{{route('todos.edit', $todo->slug)}}" class="btn btn-primary">Edit</a>
+            </div>
         </div>
     </div>
 @endsection
